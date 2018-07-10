@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Html input attributes</title>
+    <style>
+    	div {
+			background-color: purple;
+			color: white;
+			padding: 10px;
+			width: 400px;
+			margin: 5px;
+			border-radius: 50px;
+		}
+    </style>
+</head>
+<body>
+
+    <!-- input attributes value , readonly , size , rows , cols-->
+    <h2>HTML form input attributes</h2>
+    <!--value-->
+    <div>
+    	<form>
+    		<label>user name</label>
+    		<input type="text" value="enter name">
+    	</form>
+    </div>
+
+    <!--read only-->
+
+    <div>
+    	<form>
+    		<label>user name</label>
+    		<input type="text" value="enter name" readonly>
+    	</form>
+    </div>
+
+    <!--disible-->
+    <div>
+    	<form>
+    		<label>user name</label>
+    		<input type="text" value="enter name" disabled>
+    	</form>
+    </div>
+
+    <!-- size-->
+
+    <div>
+    	<form>
+    		<label>user name</label>
+    		<input type="text" size="40">
+    	</form>
+    </div>
+
+
+    <!-- rows,cols-->
+   
+    <div>
+    	<form>
+    		<label>your message</label>
+    		<textarea type="text" rows="5" cols="30"></textarea>
+    	</form>
+    </div>
+
+    <!-- HTML 5 Form Attributes required ,
+    no-validate , autofocus , pattern , placeholder -->
+
+
+    <h2>HTML 5 Attributes</h2>
+
+    <!--required-->
+    <div>
+    	<form>
+    		<label>user name <span style="color: red">*</span></label>
+    		<input type="text"  required>
+    		<input type="submit" value="submit">
+    	</form>
+    </div>
+
+
+    <!-- novalidate -->
+    <div>
+    	<form novalidate>
+    		<label>enter your email</label>
+    		<input type="email">
+    		<input type="submit" value="submit">
+    	</form>
+    </div>
+
+    <div>
+    	<form>
+    		<label>enter name</label>
+    		<input type="text" autofocus>
+    		<input type="submit" value="submit">
+    	</form>
+    </div>
+
+    <!-- place holder -->
+    <div>
+    	<form>
+    		<input type="text" placeholder="enter user name">
+    		<input type="submit" value="submit">
+    	</form>
+    </div>
+
+    <!--pattern-->
+
+    <!-- http://html5pattern.com/ -->
+
+    <div>
+    	<form>
+    		<input type="text" placeholder="enter user name" pattern="^[A-Za-z0-9_]{1,15}$">
+    		<input type="submit" value="submit">
+    	</form>
+    </div>
+
+
+</body>
+</html>
