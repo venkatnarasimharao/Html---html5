@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form element</title>
+    <style>
+    	div{
+    		font-family: "Comic Sans MS",sans-serif;
+    		background-color:orange;
+    		padding: 10px;
+    		width: 400px;
+    		margin: 5px;
+    	}
+    </style>
+</head>
+<body>
+
+
+    <!-- input and label -->
+    <div>
+    	<form>
+    		<label for="username">User name</label>
+    		<input type="text" id="username">
+    		<br>
+    		<label for="pass">password</label>
+    		<input type="password" id="pass">
+    		<br>
+    		<input type="submit" value="submit">       <!-- in value box what you named will be their on browser -->
+    		<input type="reset" value="reset">
+    	</form>
+    </div>
+
+
+    <!-- Table form -->
+    <div>
+    	<form>
+    		<table>
+    			<tr>
+    				<td>
+    					<label>User Name</label>
+    				</td>
+    				<td>
+    					<input type="text">
+    				</td>
+    			</tr>
+    			<tr>
+    				<td>
+    					<label>Password</label>
+    				</td>
+    				<td>
+    					<input type="password">
+    				</td>
+    			</tr>
+    			<tr>
+    				<td>
+    					<input type="submit" value="submit">
+    				</td>
+    				<td>
+    					<input type="reset" value="reset">
+    				</td>
+    			</tr>
+    		</table>
+    	</form>
+    </div>
+
+    <!-- Select and Option -->
+    <div>
+    	<form>
+    		<label>selet  language</label>
+    		<select>
+    			<option>HTML</option>
+    			<option>css</option>
+    			<option>JavaScript</option>
+    			<option>JQuery</option>
+    			<option>Ajax</option>
+    			<option>Bootstrap</option>
+    			<option>Angular JS</option>
+    		</select>
+    	</form>
+    </div>
+
+    <!-- Textarea -->
+    <div>
+    	<form>
+    		<label>enter your message</label>
+    		<textarea rows="5" cols="30"></textarea>
+    	</form>
+    </div>
+
+    <!-- button -->
+
+    <!-- datalist -->
+    <div>
+    	<form>
+    		<label>Select any language</label>
+    		<input list="technologies" name="tech">
+    		<datalist id="technologies">
+    			<option value="HTML">
+    			<option value="CSS">
+    			<option value="JavaScript">
+    			<option value="JQuery">
+    			<option value="AJAX">
+    			<option value="Bootstrap">
+    			<option value="Angular JS">
+    		</datalist>
+    	</form>
+    </div>
+
+
+</body>
+</html>

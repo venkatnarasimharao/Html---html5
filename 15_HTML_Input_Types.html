@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML input types</title>
+    <style>
+        div{
+            font-family: "Comic Sans MS", sans-serif;
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            width: 400px;
+            margin: 5px;
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- input type text -->
+    <div>
+        <form>
+            <label>User name</label>
+            <input type="text">
+        </form>
+    </div>
+
+    <!-- input type password -->
+    <div>
+        <form>
+            <label>Password</label>
+            <input type="password">
+        </form>
+    </div>
+
+    <!-- input type submit --> <!-- input type reset -->
+
+
+    <div>
+        <form>
+            <label for="username">User name</label>
+            <input type="text" id="username">
+            <br>
+            <label for="pass">password</label>
+            <input type="password" id="pass">
+            <br>
+            <input type="submit" value="submit">       <!-- in value box what you named will be their on browser -->
+            <input type="reset" value="reset">
+        </form>
+    </div>
+
+    
+    <!-- input type radio -->
+    <div>
+        <form>
+            <label>Is html easy</label>
+            <input type="radio" name="easy" value="yes">Yes  <!-- name should be equal so tha it get's seleted only 1-->
+            <input type="radio" name="easy" value="no">NO
+        </form>
+    </div>
+
+    <!-- input type checkbox -->
+    <div>
+        <form>
+            <label>select your hobbies</label>
+            <input type="checkbox" value="eating">eating <!--if you don't give name every box can be selected-->
+            <input type="checkbox" value="coding">coding
+            <input type="checkbox" value="sleeping">sleeping
+        </form>
+    </div>
+
+    <!-- input type button -->
+    <div>
+        <form>
+            <label>User name</label>
+            <input type="text">
+            <input type="button" value="send">
+        </form>
+    </div>
+
+    <!-- HTML5 Input Types color, date, datetime-local, email,
+    month, number, range, search, time, url, Week-->
+    <h2>color</h2>
+    <div>
+        <form>
+            <label>select one color</label>
+            <input type="color">
+        </form>
+    </div>
+
+    <h2>date</h2>
+    <div>
+        <form>
+            <label>select date</label>
+            <input type="date">
+        </form>
+    </div>
+
+    <h2>date and time</h2>
+    <div>
+        <form>
+            <label>select date and time</label>
+            <input type="datetime-local">
+        </form>
+    </div>
+
+
+    <h2>email</h2>
+    <div>
+        <form>
+            <label>enter email i'd</label>
+            <input type="email">
+            <input type="submit" value="submit">
+        </form>
+    </div>
+
+    <!--months-->
+    <div>
+        <form>
+            <label>select month</label>
+            <input type="month">
+        </form>
+    </div>
+
+
+
+
+    <div>
+        <form>
+            <label>select number</label>
+            <input type="number" min="18" max="60">
+            <input type="submit" value="submit">
+        </form>
+    </div>
+
+
+    <div>
+        <form>
+            <label>select range</label>
+            0<input type="range" min="0" max="100" id="range">100
+            <input type="submit" value="submit" onclick="alert(document.getElementById('range').value)">
+        </form>
+    </div>
+
+
+    <div>
+        <form>
+            <label>search here</label>
+            <input type="search">
+        </form>
+    </div>
+
+    <div>
+        <form>
+            <label> enter web site url </label>
+            <input type="url">
+            <input type="submit" value="submit">
+        </form>
+    </div>
+
+
+    <div>
+        <form>
+            <label>select a week</label>
+            <input type="week">
+        </form>
+    </div>
+
+
+    <div>
+        <form>
+            <label>select time</label>
+            <input type="time" id="time">
+            <input type="submit" value="submit" onclick="alert(document.getElementById('time').value)">
+        </form>
+    </div>
+
+
+
+
+</body>
+</html>
