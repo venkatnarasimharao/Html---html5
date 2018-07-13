@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Nav Element</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    	body{
+    		font-family: Arial, sans-serif;
+    		margin: 0;
+    	}
+    	nav ul{
+			list-style-type: none;
+    		padding: 0;
+    		margin: 0;
+
+    	}
+    	nav{
+    		background-color: black;
+    		overflow: hidden; /*see below*/
+    	}
+    	nav ul li{
+    		float: left; /*Hides  the background colour*/
+    	}
+    	nav ul li a{
+    		text-decoration: none;
+    		color: white;
+    		font-size: 25px;
+    		padding: 10px 25px;
+    		display: inline-block; /*mandatory*/
+    	}
+
+    	nav ul li a:hover{
+    		background-color: seagreen;
+    	} 
+    	nav ul li a.active{
+    		background-color: forestgreen;
+    	}
+    </style>
+    
+</head>
+<body>
+
+   <!--Main navigation-->
+   <nav>
+   	<ul>
+   		<li>
+   			<a href="#" class="active">
+   				<i class="fa fa-home"></i>Home</a>
+   		</li>
+   		<li>
+   			<a href="#">
+   				<i class="fa fa-id-card"></i>About us</a>
+   		</li>
+   		<li>
+   			<a href="#">
+   				<i class="fa fa-envelope"></i>Contact Us</a>
+   		</li>
+   		<li>
+   			<a href="#">
+   				<i class="fa fa-graduation-cap"></i> Careers</a>
+   		</li>
+   		<li>
+   			<a href="#">
+   				<i class="fa fa-book"></i>Courses</a>
+   		</li>
+   	</ul>
+   </nav>
+
+</body>
+</html>
